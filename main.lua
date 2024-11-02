@@ -35,6 +35,13 @@ Script1:AddButton({
 })
 
 Script1:AddButton({
+	Name = "Touch Pocket Watch",
+	Callback = function()
+			 fireclickdetector(workspace.PocketWatch.Part.ClickDetector)
+	 end
+})
+
+Script1:AddButton({
 	Name = "Destroy Landmines",
 	Callback = function()
 game.Workspace.Landmines:Destroy()
