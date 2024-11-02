@@ -45,6 +45,11 @@ Script1:AddButton({
 	Name = "Get B-Ball",
 	Callback = function()
 			 fireclickdetector(workspace.Furniture.jorgisBasketballs["B-Ball"].ClickDetector)
+for i,v in ipairs(game:GetService("Workspace").Furniture.jorgisBasketballs:GetDescendants()) do
+            if v.ClassName == "ClickDetector" then
+                fireclickdetector(v)
+            end
+        end
 	 end
 })
 
