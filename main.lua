@@ -6,7 +6,7 @@ local teleportFunc = queueonteleport or queue_on_teleport
 if teleportFunc then
     teleportFunc([[
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Credits",Text = "Script By Nexer1234" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "Yay"})
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Pro666Pro/BrazilCheck/main/main.lua'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Pro666Pro/AutoGetClock/main/main.lua'))()
 	]])
 end	
             
