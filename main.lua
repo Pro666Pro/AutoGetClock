@@ -1,4 +1,4 @@
-local GameName = "Clock Master - by nexer"
+local GameName = "Clock Master 🕰 - by nexer"
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({IntroText = "Clock Master 🕰", IntroIcon = "rbxassetid://15315284749",Name = GameName, HidePremium = false, SaveConfig = true, ConfigFolder = "Tutorial"})
@@ -42,33 +42,11 @@ Script1:AddButton({
 })
 
 Script1:AddButton({
-	Name = "Get B-Ball",
+	Name = "Open All Drawers",
 	Callback = function()
-			 fireclickdetector(workspace.Furniture.jorgisBasketballs["B-Ball"].ClickDetector)
-local BB = game.Workspace.Furniture
-wait(0.3)
-for i,v in ipairs(BB:GetService("jorgisBasketballs"):GetDescendants()) do
-            if v.ClassName == "ClickDetector" then
-                fireclickdetector(v)
-            end
-        end
+			 fireclickdetector(workspace.Furniture.parentsDresser.Drawer.Interactive.ClickDetector)
 	 end
 })
-
-Script1:AddButton({
-	Name = "Get B-Ball",
-	Callback = function()
-			 fireclickdetector(workspace.Furniture.jorgisBasketballs["B-Ball"].ClickDetector)
-local BB = game.Workspace.Furniture
-wait(0.3)
-for i,v in ipairs(BB:GetService("jorgisBasketballs"):GetDescendants()) do
-            if v.ClassName == "ClickDetector" then
-                fireclickdetector(v)
-            end
-        end
-	 end
-})
-
 
 Script1:AddButton({
 	Name = "Destroy Landmines",
