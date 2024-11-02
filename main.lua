@@ -5,6 +5,8 @@ local Window = OrionLib:MakeWindow({IntroText = "Clock Master", IntroIcon = "rbx
 
 OrionLib:MakeNotification({Name = "Warning",Content = "Use at your own risk.",Image = "rbxassetid://7733658504",Time = 5})
 
+-- nah how dare you skid?
+
 local Script1 = Window:MakeTab({
 	Name = "Main",
 	Icon = "rbxassetid://4483345998",
@@ -29,28 +31,6 @@ Script1:AddButton({
 	Name = "Fix Generator",
 	Callback = function()
 			 --fireproximityprompt
-	 end
-})
-
-Script1:AddButton({
-	Name = "Bypass Jumpscare + Ran Out Of Time",
-	Callback = function()
-
-if hookmetamethod then
-local bypass;
-    bypass = hookmetamethod(game, "__namecall", function(method, ...) 
-        if getnamecallmethod() == "FireServer" and method == game.ReplicatedStorage.Remotes.Jumpscare then
-            return
-        elseif getnamecallmethod() == "FireServer" and method == game.ReplicatedStorage.Remotes.RanOutOfTime then
-            return
-        end
-        return bypass(method, ...)
-    end)
-game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Bypassed!",Icon = "rbxassetid://7733658504",Duration = 5})
-else
-game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Error",Text = "Impossible To Bypass.",Icon = "rbxassetid://7733658504",Duration = 5})
-end
-      
 	 end
 })
 
