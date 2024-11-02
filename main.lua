@@ -54,6 +54,13 @@ end
 	 end
 })
 
+Script1:AddButton({
+	Name = "Destroy Landmines",
+	Callback = function()
+game.Workspace.Landmines:Destroy()
+	 end
+})
+
 local Script = Window:MakeTab({
 	Name = "Teleport To Places",
 	Icon = "rbxassetid://4483345998",
@@ -77,6 +84,8 @@ Script:AddButton({
 Script:AddButton({
 	Name = "Teleport To Five Night's OOG { second method, use in barzil }",
 	Callback = function()
-			 game:GetService("TeleportService"):Teleport(102908326578005)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(250.10128784179688, 150.29568481445312, -458.1103820800781)
+wait(0.001)
+game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
 	 end
 })
