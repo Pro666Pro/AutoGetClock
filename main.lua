@@ -30,14 +30,21 @@ Script1:AddButton({
 Script1:AddButton({
 	Name = "Fix Generator",
 	Callback = function()
-			 --fireproximityprompt
+			 fireproximityprompt(workspace.Furniture.CellarBasement.Generator.ProximityPrompt)
 	 end
 })
 
 Script1:AddButton({
-	Name = "Touch Pocket Watch",
+	Name = "Get Pocket Watch",
 	Callback = function()
 			 fireclickdetector(workspace.PocketWatch.Part.ClickDetector)
+	 end
+})
+
+Script1:AddButton({
+	Name = "Get B-Ball",
+	Callback = function()
+			 fireclickdetector(workspace.Furniture.jorgisBasketballs["B-Ball"].ClickDetector)
 	 end
 })
 
