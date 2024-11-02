@@ -45,13 +45,30 @@ Script1:AddButton({
 	Name = "Get B-Ball",
 	Callback = function()
 			 fireclickdetector(workspace.Furniture.jorgisBasketballs["B-Ball"].ClickDetector)
-for i,v in ipairs(game:GetService("Workspace").Furniture.jorgisBasketballs:GetDescendants()) do
+local BB = game.Workspace.Furniture
+wait(0.3)
+for i,v in ipairs(BB:GetService("jorgisBasketballs"):GetDescendants()) do
             if v.ClassName == "ClickDetector" then
                 fireclickdetector(v)
             end
         end
 	 end
 })
+
+Script1:AddButton({
+	Name = "Get B-Ball",
+	Callback = function()
+			 fireclickdetector(workspace.Furniture.jorgisBasketballs["B-Ball"].ClickDetector)
+local BB = game.Workspace.Furniture
+wait(0.3)
+for i,v in ipairs(BB:GetService("jorgisBasketballs"):GetDescendants()) do
+            if v.ClassName == "ClickDetector" then
+                fireclickdetector(v)
+            end
+        end
+	 end
+})
+
 
 Script1:AddButton({
 	Name = "Destroy Landmines",
