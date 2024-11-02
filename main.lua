@@ -47,8 +47,16 @@ for i,v in ipairs(game:GetService("Workspace"):GetDescendants()) do
         end
 wait(5)
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Credits",Text = "Step 2 Completed" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "Yay"})
-fireclickdetector(workspace.Furniture.jorgisDresser.Drawer.Handle.ClickDetector)
+for i,v in ipairs(game:GetService("Workspace"):GetDescendants()) do
+            if v.ClassName == "ClickDetector" then
+                fireclickdetector(v)
+            end
+        end
 wait(5)
 game:GetService("StarterGui"):SetCore("SendNotification",{Title = "Credits",Text = "Step 3 Completed" ,Duration = 10, Icon = "rbxthumb://type=Asset&id=9649923610&w=150&h=150",Button1 = "Yay"})
+_G.Key = true
+while _G.Key == true do
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(26.34327507019043, 4.055271148681641, -1.8455318212509155)
+wait(0.1)
+end
 end
