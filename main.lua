@@ -30,7 +30,7 @@ Script1:AddButton({
 Script1:AddButton({
 	Name = "Fix Generator",
 	Callback = function()
-			 fireproximityprompt(workspace.Furniture.CellarBasement.Generator.ProximityPrompt)
+			 fireproximityprompt(workspace.CellarBasement.Generator.ProximityPrompt)
 	 end
 })
 
